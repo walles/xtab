@@ -17,6 +17,6 @@
     },
     "background": {
         "scripts": ["raindrop.min.js", "destroyer.js"]
-    }
+    },
     "minimum_chrome_version": "45"
 }
