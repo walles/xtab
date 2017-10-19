@@ -163,7 +163,7 @@ function _handleTabAdded(data) {
     // find tab to remove
     chrome.tabs.query({currentWindow: true}, function(tabs) {
         tabs = tabs.filter(function(tab) {
-            return !tab.pinned && tab.id != tabId;
+            return !tab.pinned && tab.id != tabId && !tab.audible;
         });
 
         _debug('Total tabs', tabs.length);
